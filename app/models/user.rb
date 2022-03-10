@@ -49,5 +49,9 @@ class User < ApplicationRecord
     end
   end
 
+  def following?(user)
+     followeds.include?(user)
+  end
+
 
 end
